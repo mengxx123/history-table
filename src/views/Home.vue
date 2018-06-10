@@ -1,5 +1,15 @@
 <template>
     <my-page title="历史朝代表">
+        <div id="tianxie">
+            <div class="r1"><label class="e">年份</label><select id="year" class="k"></select></div>
+            <div class="clear"></div></div><div id="jisuan">
+                <input type="button" value="计算" onclick="calc();" class="b" c></div>
+                <div id="jieguo"><div class="s1"><label class="e">结果</label>
+                <table id="result" class="table table-bordered table-striped text-center">
+                    <tr class="head"><td>年代</td><td>朝代</td><td>都城</td><td>今地</td></tr></table>
+                    </div><div class="clear"></div></div>    </div>
+
+        <ui-text-field v-model.number="year" />
         <table class="ui-table history-table">
             <tbody>
             <tr class="bg">
@@ -604,12 +614,89 @@
 </template>
 
 <script>
-    export default {
-        data () {
-            return {
-            }
-        }
-    }
+/* eslint-disable */
+var historys = [
+  [-2146, -1675, "夏", "安邑", "山西夏县"],
+  [-1675, -1029, "商", "亳", "河南商丘"],
+  [-1029, -771, "西周", "镐京", "陕西西安", "周"],
+  [-770, -256, "东周", "洛邑", "南洛阳", "周"],
+  [-221, -207, "秦", "咸阳", "陕西咸阳"],
+  [-206, 25, "西汉", "长安", "陕西西安", "汉"],
+  [25, 220, "东汉", "洛阳", "河南洛阳", "汉"],
+  [220, 265, "魏", "洛阳", "河南洛阳", "三国"],
+  [221, 263, "蜀", "成都", "四川成都", "三国"],
+  [222, 280, "吴", "建业", "江苏南京", "三国"],
+  [265, 317, "西晋", "洛阳", "河南洛阳"],
+  [317, 420, "东晋", "建康", "江苏南京", "东晋十六国"],
+  [304, 439, "十六国", "", "", "东晋十六国"],
+  [420, 479, "宋", "建康", "江苏南京", "南朝"],
+  [479, 502, "齐", "建康", "江苏南京", "南朝"],
+  [502, 557, "梁", "建康", "江苏南京", "南朝"],
+  [557, 589, "陈", "建康", "江苏南京", "南朝"],
+  [386, 534, "北魏", "平城|洛阳", "山西大同|河南洛阳", "北朝"],
+  [534, 550, "东魏", "邺", "河北临漳", "北朝"],
+  [550, 577, "北齐", "邺", "河北临漳", "北朝"],
+  [535, 557, "西魏", "长安", "陕西西安", "北朝"],
+  [557, 581, "北周", "长安", "陕西西安", "北朝"],
+  [581, 618, "隋", "大兴", "陕西西安"],
+  [618, 907, "唐", "长安", "陕西西安"],
+  [907, 923, "后梁", "汴", "河南开封", "五代十国"],
+  [923, 936, "后唐", "洛阳", "河南洛阳", "五代十国"],
+  [936, 946, "后晋", "汴", "河南开封", "五代十国"],
+  [947, 950, "后汉", "汴", "河南开封", "五代十国"],
+  [951, 960, "后周", "汴", "河南开封", "五代十国"],
+  [902, 979, "十国", "", "", "五代十国"],
+  [960, 1127, "北宋", "开封", "河南开封", "宋"],
+  [1127, 1279, "南宋", "临安", "浙江临安", "宋"],
+  [907, 1125, "辽", "皇都 (上京)", "辽宁巴林右旗"],
+  [1038, 1227, "西夏", "兴庆府", "宁夏银川"],
+  [1115, 1234, "金", "会宁|中都|开封", "阿城(黑龙江)|北京|河南开封"],
+  [1206, 1368, "元", "大都", "北京"],
+  [1368, 1644, "明", "北京", "北京"],
+  [1616, 1911, "清", "北京", "北京"],
+  [1912, 1949, "中华民国", "南京", "江苏南京"],
+  [1949, 2100, "中华人民共和国", "北京", "北京"]
+];
+
+export default {
+  data() {
+    return {
+      year: null
+    };
+  },
+  mounted() {
+      this.year = 440
+      for (let ietm of historys) {
+        //   if ()
+      }
+    //   var fillYear = function() {
+    //     for (var i = -2146; i <= 2018; i++) {
+    //         if (i == 0) {
+    //         continue;
+    //         }
+    //         $('#year').append('<option value=' + i + '>' + i.toString().replace('-', '公元前') + '年</option>');
+    //     }
+    //     } ();
+
+    //     var calc = function() {
+
+    //     var year = $('#year').val();
+    //     $('#result .item').remove();
+    //     for (var i = 0; i < historys.length; i++) {
+    //         var chao = historys[i];
+    //         if (typeof(chao[5]) != 'undefined') {
+    //         chao[2] = chao[2] + '(' + chao[5] + ')';
+    //         }
+    //         if (year >= chao[0] && year <= chao[1]) {
+    //         $('#result tr:last').after('<tr class="item"><td>' + chao[0].toString().replace('-', '公元前') + '年 至 ' + chao[1].toString().replace('-', '公元前') + '年</td><td>' + chao[2] + '</td><td>' + chao[3] + '</td><td>' + chao[4] + '</td></tr>');
+    //         }
+    //     }
+    //     }
+  },
+  methods: {
+      
+  }
+};
 </script>
 
 <style scoped>

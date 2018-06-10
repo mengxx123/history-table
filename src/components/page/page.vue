@@ -6,6 +6,9 @@
                 <ui-list-item title="历史朝代表" to="/">
                     <ui-icon slot="left" value="grade"/>
                 </ui-list-item>
+                <ui-list-item title="纪年换算" to="/year">
+                    <ui-icon slot="left" value="grade"/>
+                </ui-list-item>
             </ui-list>
             <ui-list class="ui-position-bottom" @itemClick="toggle()">
                 <ui-list-item title="关于" href="http://about.yunser.com/" target="_blank">

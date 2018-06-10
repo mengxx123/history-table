@@ -1,5 +1,510 @@
 /* eslint-disable */
 const data = [
+    // 五代十国
+    // 北宋
+    {
+        name: '建隆',
+        startYear: 960,
+        last: 4,
+    },
+    {
+        name: '乾德',
+        startYear: 963,
+        last: 6,
+    },
+    {
+        name: '开宝',
+        startYear: 968,
+        last: 9,
+    },
+    {
+        name: '太平兴国',
+        startYear: 976,
+        last: 9,
+    },
+    {
+        name: '雍熙',
+        startYear: 984,
+        last: 4,
+    },
+    {
+        name: '端拱',
+        startYear: 988,
+        last: 2,
+    },
+    {
+        name: '淳化',
+        startYear: 990,
+        last: 5,
+    },
+    {
+        name: '至道',
+        startYear: 995,
+        last: 3,
+    },
+    {
+        name: '咸平',
+        startYear: 998,
+        last: 6,
+    },
+    {
+        name: '景德',
+        startYear: 1004,
+        last: 4,
+    },
+    {
+        name: '大中祥符',
+        startYear: 1008,
+        last: 9,
+    },
+    {
+        name: '天禧',
+        startYear: 1017,
+        last: 5,
+    },
+    {
+        name: '乾兴',
+        startYear: 1022,
+        last: 1,
+    },
+    {
+        name: '天圣',
+        startYear: 1023,
+        last: 10,
+    },
+    {
+        name: '明道',
+        startYear: 1032,
+        last: 2,
+    },
+    {
+        name: '景祐',
+        startYear: 1034,
+        last: 5,
+    },
+    {
+        name: '宝元',
+        startYear: 1038,
+        last: 3,
+    },
+    {
+        name: '康定',
+        startYear: 1040,
+        last: 2,
+    },
+    {
+        name: '庆历',
+        startYear: 1041,
+        last: 8,
+    },
+    {
+        name: '皇祐',
+        startYear: 1049,
+        last: 6,
+    },
+    {
+        name: '至和',
+        startYear: 1054,
+        last: 3,
+    },
+    {
+        name: '嘉祐',
+        startYear: 1056,
+        last: 8,
+    },
+    {
+        name: '治平',
+        startYear: 1064,
+        last: 4,
+    },
+    {
+        name: '熙宁',
+        startYear: 1068,
+        last: 10,
+    },
+    {
+        name: '元丰',
+        startYear: 1078,
+        last: 8,
+    },
+    {
+        name: '元祐',
+        startYear: 1086,
+        last: 9,
+    },
+    {
+        name: '绍圣',
+        startYear: 1094,
+        last: 5,
+    },
+    {
+        name: '元符',
+        startYear: 1098,
+        last: 3,
+    },
+    {
+        name: '建中靖国',
+        startYear: 1101,
+        last: 1,
+    },
+    {
+        name: '崇宁',
+        startYear: 1102,
+        last: 5,
+    },
+    {
+        name: '大观',
+        startYear: 1107,
+        last: 4,
+    },
+    {
+        name: '政和',
+        startYear: 1111,
+        last: 8,
+    },
+    {
+        name: '重和',
+        startYear: 1118,
+        last: 2,
+    },
+    {
+        name: '宣和',
+        startYear: 1119,
+        last: 7,
+    },
+    {
+        name: '靖康',
+        startYear: 1126,
+        last: 2,
+    },
+    // 南宋
+    {
+        name: '建炎',
+        startYear: 1127,
+        last: 4,
+    },
+    {
+        name: '绍兴',
+        startYear: 1131,
+        last: 32,
+    },
+    {
+        name: '隆兴',
+        startYear: 1161,
+        last: 2,
+    },
+    {
+        name: '乾道',
+        startYear: 1165,
+        last: 9,
+    },
+    {
+        name: '淳熙',
+        startYear: 1174,
+        last: 14,
+    },
+    {
+        name: '绍熙',
+        startYear: 1190,
+        last: 5,
+    },
+    {
+        name: '庆元',
+        startYear: 1195,
+        last: 6,
+    },
+    {
+        name: '嘉泰',
+        startYear: 1201,
+        last: 4,
+    },
+    {
+        name: '开禧',
+        startYear: 1205,
+        last: 3,
+    },
+    {
+        name: '嘉定',
+        startYear: 1208,
+        last: 17,
+    },
+    {
+        name: '宝庆',
+        startYear: 1225,
+        last: 3,
+    },
+    {
+        name: '绍定',
+        startYear: 1228,
+        last: 6,
+    },
+    {
+        name: '端平',
+        startYear: 1234,
+        last: 3,
+    },
+    {
+        name: '嘉熙',
+        startYear: 1237,
+        last: 4,
+    },
+    {
+        name: '淳祐',
+        startYear: 1241,
+        last: 12,
+    },
+    {
+        name: '宝祐',
+        startYear: 1253,
+        last: 6,
+    },
+    {
+        name: '开庆',
+        startYear: 1259,
+        last: 1,
+    },
+    {
+        name: '景定',
+        startYear: 1260,
+        last: 5,
+    },
+    {
+        name: '咸淳',
+        startYear: 1265,
+        last: 10,
+    },
+    {
+        name: '德祐',
+        startYear: 1275,
+        last: 2,
+    },
+    {
+        name: '景炎',
+        startYear: 1276,
+        last: 3,
+    },
+    {
+        name: '祥兴',
+        startYear: 1278,
+        last: 2,
+    },
+    // 辽
+    {
+        name: '神册',
+        startYear: 916,
+        last: 7,
+    },
+    {
+        name: '天赞',
+        startYear: 922,
+        last: 5,
+    },
+    {
+        name: '天显',
+        startYear: 926,
+        last: 13,
+    },
+    {
+        name: '会同',
+        startYear: 938,
+        last: 10,
+    },
+    {
+        name: '大同',
+        startYear: 947,
+        last: 1,
+    },
+    {
+        name: '天禄',
+        startYear: 947,
+        last: 5,
+    },
+    {
+        name: '应历',
+        startYear: 951,
+        last: 19,
+    },
+    {
+        name: '保宁',
+        startYear: 969,
+        last: 11,
+    },
+    {
+        name: '乾亨',
+        startYear: 979,
+        last: 5,
+    },
+    {
+        name: '统和',
+        startYear: 983,
+        last: 30,
+    },
+    {
+        name: '开泰',
+        startYear: 1012,
+        last: 10,
+    },
+    {
+        name: '太平',
+        startYear: 1021,
+        last: 11,
+    },
+    {
+        name: '景福',
+        startYear: 1031,
+        last: 2,
+    },
+    {
+        name: '重熙',
+        startYear: 1032,
+        last: 24,
+    },
+    {
+        name: '清宁',
+        startYear: 1055,
+        last: 10,
+    },
+    {
+        name: '咸雍',
+        startYear: 1065,
+        last: 10,
+    },
+    {
+        name: '大康/太康',
+        startYear: 1075,
+        last: 10,
+    },
+    {
+        name: '大安',
+        startYear: 1085,
+        last: 10,
+    },
+    {
+        name: '寿昌(隆)',
+        startYear: 1095,
+        last: 7,
+    },
+    {
+        name: '乾统',
+        startYear: 1101,
+        last: 10,
+    },
+    {
+        name: '天庆',
+        startYear: 1111,
+        last: 10,
+    },
+    {
+        name: '保大',
+        startYear: 1121,
+        last: 5,
+    },
+    // 金朝
+    {
+        name: '收国',
+        startYear: 1115,
+        last: 2,
+    },
+    {
+        name: '天辅',
+        startYear: 1117,
+        last: 7,
+    },
+    {
+        name: '天会',
+        startYear: 1123,
+        last: 15,
+    },
+    {
+        name: '天眷',
+        startYear: 1138,
+        last: 3,
+    },
+    {
+        name: '皇统',
+        startYear: 1141,
+        last: 9,
+    },
+    {
+        name: '天德',
+        startYear: 1149,
+        last: 5,
+    },
+    {
+        name: '贞元',
+        startYear: 1153,
+        last: 4,
+    },
+    {
+        name: '正隆',
+        startYear: 1156,
+        last: 6,
+    },
+    {
+        name: '大定',
+        startYear: 1161,
+        last: 29,
+    },
+    {
+        name: '明昌',
+        startYear: 1190,
+        last: 7,
+    },
+    {
+        name: '承安',
+        startYear: 1196,
+        last: 5,
+    },
+    {
+        name: '泰和',
+        startYear: 1201,
+        last: 8,
+    },
+    {
+        name: '大安',
+        startYear: 1209,
+        last: 3,
+    },
+    {
+        name: '崇庆',
+        startYear: 1212,
+        last: 2,
+    },
+    {
+        name: '至宁',
+        startYear: 1213,
+        last: 1,
+    },
+    {
+        name: '贞祐',
+        startYear: 1213,
+        last: 5,
+    },
+    {
+        name: '兴定',
+        startYear: 1217,
+        last: 6,
+    },
+    {
+        name: '元光',
+        startYear: 1222,
+        last: 2,
+    },
+    {
+        name: '正大',
+        startYear: 1224,
+        last: 9,
+    },
+    {
+        name: '开兴',
+        startYear: 1232,
+        last: 1,
+    },
+    {
+        name: '天兴',
+        startYear: 1232,
+        last: 3,
+    },
     // 元朝
     {
         name: '中统',

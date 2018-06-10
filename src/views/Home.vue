@@ -1,15 +1,15 @@
 <template>
     <my-page title="历史朝代表">
-        <div id="tianxie">
+        <!-- <div id="tianxie">
             <div class="r1"><label class="e">年份</label><select id="year" class="k"></select></div>
             <div class="clear"></div></div><div id="jisuan">
                 <input type="button" value="计算" onclick="calc();" class="b" c></div>
                 <div id="jieguo"><div class="s1"><label class="e">结果</label>
                 <table id="result" class="table table-bordered table-striped text-center">
                     <tr class="head"><td>年代</td><td>朝代</td><td>都城</td><td>今地</td></tr></table>
-                    </div><div class="clear"></div></div>    </div>
+                    </div><div class="clear"></div></div>    </div> -->
 
-        <ui-text-field v-model.number="year" />
+        <!-- <ui-text-field v-model.number="year" /> -->
         <table class="ui-table history-table">
             <tbody>
             <tr class="bg">

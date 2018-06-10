@@ -6,7 +6,7 @@
         </div>
         <ui-article class="article">
             <p v-if="!filterDisplay.length">暂无搜索结果~</p>
-            <p v-if="filterDisplay.length">注：暂时只支持元朝之后的朝代。</p>
+            <p v-if="filterDisplay.length">注：暂时只支持宋朝及之后的朝代。</p>
             <table v-if="filterDisplay.length">
                 <tr>
                     <th>公元</th>

@@ -6,7 +6,7 @@
         </div>
         <ui-article class="article">
             <p v-if="!filterDisplay.length">暂无搜索结果~</p>
-            <p v-if="filterDisplay.length">注：暂时只支持宋朝及之后的朝代。</p>
+            <p v-if="filterDisplay.length">注：支持所有的朝代以及部分日本的年号。若搜索结果数据太多，仅显示前 100 条。</p>
             <table v-if="filterDisplay.length">
                 <tr>
                     <th>公元</th>
@@ -34,13 +34,19 @@
         },
         computed: {
             filterDisplay() {
-                if (!this.keyword) {
-                    return this.display
+                let arr
+                if (this.keyword) {
+                    arr = this.display.filter(item => {
+                        return ('' + item.year).includes(this.keyword) ||
+                            item.name.includes(this.keyword)
+                    })
+                } else {
+                    arr = this.display
                 }
-                return this.display.filter(item => {
-                    return ('' + item.year).includes(this.keyword) ||
-                        item.name.includes(this.keyword)
-                })
+                if (arr.length > 100) {
+                    return arr.slice(0, 100)
+                }
+                return arr
             }
         },
         mounted() {
@@ -86,6 +92,13 @@ $divider: rgba(0,0,0,.12);
     }
 }
 .article {
-    margin-top: 64px;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 16px;
+    // margin-top: 64px;
+    overflow: auto;
 }
 </style>
